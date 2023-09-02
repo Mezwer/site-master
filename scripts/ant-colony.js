@@ -224,7 +224,7 @@ async function runApp() {
         while (visited.size != ant_pos.length) {
             await moveAnt(nextNode, visited);
             //console.log(lines);
-            await timer(0);
+            await timer(50);
             resetLines();
         }
 
