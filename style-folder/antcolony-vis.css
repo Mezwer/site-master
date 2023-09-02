@@ -1,0 +1,52 @@
+:root {
+    --pathLen: 0;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.dot {
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% 50%;
+}
+
+#container {
+    position: relative;
+}
+
+#container svg, #dots {
+    position: absolute;
+}
+
+/* #container svg line {
+} */
+
+@keyframes dash {
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: var(--pathLen);
+    }
+}
+
+#toolbar {
+    height: 6%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toolbar div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: whitesmoke;
+}

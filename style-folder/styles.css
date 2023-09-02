@@ -1,0 +1,172 @@
+:root {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: url(hkcityscape.jpg) no-repeat center fixed;
+    background-size: cover;
+    overflow: overlay;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 25px;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #05256e;
+    transition: 0.3s all ease;
+    z-index: 1000;
+}
+
+.navbar-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: white;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.6);
+    transition: .3s all;
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background-color: #041f5c;
+}
+
+.link-text {
+    opacity: 0;
+    margin-left: 1rem;
+    transition: .2s;
+}
+
+.navbar:hover {
+    width: 13rem;
+}
+
+.navbar:hover .link-text {
+    opacity: 1;
+}
+
+.fa-user {
+    margin: 0 1.5rem;
+}
+
+.fa-home {
+    margin: 0 1.25rem;
+}
+
+.fa-folder {
+    margin: 0 1.4rem;
+}
+
+#homepage-main {
+    margin-left: 5rem;
+    padding: 1rem;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+
+#home-h1 {
+    font-size: 10rem;
+    color: white;
+    user-select: none;
+}
+
+#index-content {
+    color: white;
+    position: absolute;
+    left: 0;
+    margin: 0 5rem;
+    padding: 1rem;
+    opacity: 0;
+    transition: 3s all ease-out;
+    z-index: 1;
+    user-select: none;
+}
+
+#homepage-main p:hover {
+    opacity: 1;
+}
+
+#about-content {
+    color: white;
+    z-index: 1;
+    font-size: 4rem;
+    user-select: none;
+}
+
+.expand13 {
+    transform: translateX(7rem);
+}
+
+#project-header {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+#project-grid {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: row;
+    /* change min unit after making cards*/
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+#project-grid > div{
+    color: white;
+    font-size: 35px;
+}
+
+#project-grid > a {
+    color: white;
+    font-size: 3rem;
+    text-decoration: underline transparent;
+    transition: .5s all ease;
+    background-color: #05256e;
+    padding: 1rem;
+    border-radius: 25px;
+    width: 50%;
+    text-align: center;
+}
+
+#project-grid > a:hover {
+    text-decoration: underline white;
+}
+
+#project-main {
+    margin-left: 5rem;
+    padding: 1rem;
+    height: 100vh;
+}

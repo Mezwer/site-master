@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#toolbar {
+    height: 10%;
+    width: 100%;
+    background-color: gray;
+    justify-content: space-between;
+    display: flex;
+}
+
+@keyframes backdark{
+    from {
+        background-color: #60605e;
+    }
+    to {
+        background-color: #474745;
+    }
+}
+
+.button, .button2 {
+    opacity: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: .01em solid transparent;
+    border-radius: 25px;
+    user-select: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.button:active {
+    animation: backdark 0.5s ease-in-out;
+}
+
+.buttonback {
+    border-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.buttonback:hover {
+    background-color: #474745;
+}
+
+#arraycontainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bar {
+    color: whitesmoke;
+    background-color: blue;
+    margin: 0px 1px 0px;
+    text-align: center;
+    border-radius: 0px 0px 5px 5px;
+    user-select: none;
+}
+
+#left, #right {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul{
+    position: absolute;
+    background: gray;
+    list-style: none;
+    width: 100%;
+    top: 0;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.dropdown div:hover + ul {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dropdown ul:hover {
+    opacity: 1;
+    pointer-events: all;
+}
+
+input[type="range"] {
+    width: 97%;
+}
+
+.dropdown div {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.value {
+    margin-left: 2px;
+}
