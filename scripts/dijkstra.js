@@ -343,7 +343,7 @@ function dijkstra(root, target) {
 }
 
 /**
- * @param {Array} params parameters for redoing the graph; must be in order of 
+ * @param {array} params parameters for redoing the graph; must be in order of 
  * [number of Nodes, delay, probability]
  * 
  * creates event listeners for elements in toolbar
@@ -460,6 +460,8 @@ function removeAllLinesNodes() {
 
 /**
  * replaces the existing graph with a new graph
+ * @param {int} nNodes number of Nodes
+ * @param {float} p probability, 0 - 1
  */
 function redo(nNodes, p) {
     stop = true;
@@ -480,6 +482,10 @@ function redo(nNodes, p) {
     done = true;
 }
 
+/**
+ * runs dijkstra's algorithm and the animation
+ * @param {int} delay delay in ms 
+ */
 async function runAnimation(delay) {
     let n = dijkstra(positions[0], positions[1]);
     await executeInstructions(n, delay);
