@@ -212,7 +212,7 @@ function resetLines() {
 }
 
 function setUp() {
-    randomPosition(50);
+    randomPosition(10);
     placeDots();
     settings();
 
@@ -224,7 +224,7 @@ async function runApp() {
         while (visited.size != ant_pos.length) {
             await moveAnt(nextNode, visited);
             //console.log(lines);
-            await timer(50);
+            await timer(0);
             resetLines();
         }
 

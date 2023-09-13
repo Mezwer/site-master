@@ -244,7 +244,7 @@ async function load_insertion() { // i literally have no clue wtf i did in here
 }
 
 // merge sort
-function merge(left, right) { // fuck the comments i dont have the brain power to comprehend what i just did here
+function merge(left, right) { // i dont have the brain power to comprehend what i just did here
     let arr = [];
     //console.log(`left: ${left} right: ${right}`);
     while (left.length && right.length) {

@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+#toolbar {
+    height: 9%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toolbar div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: black;
+}
+
+#container {
+    position: relative;
+}
+
+#container svg {
+    position: absolute;
+}
+
+.node {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% 50%;
+}
+
+#container svg line {
+    transition: opacity 0.1s ease-in-out;
+}
+
+.fade {
+    opacity: 0;
+}
+
+#toolbar p {
+    color: white;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-color: white;
+    border-width: .1em;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 5px;
+    user-select: none;
+}
