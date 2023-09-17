@@ -117,10 +117,17 @@ body {
     opacity: 1;
 }
 
-#about-content {
+.about-content {
     color: white;
     z-index: 1;
     font-size: 4rem;
+    user-select: none;
+}
+
+.about-content-s {
+    color: white;
+    z-index: 1;
+    font-size: 2rem;
     user-select: none;
 }
 
