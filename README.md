@@ -1,2 +1,2 @@
-# site
-This is a test website, storing the WIP on Github.
+# README
+Website portfolio, with my contact and projects displayed on the page.
